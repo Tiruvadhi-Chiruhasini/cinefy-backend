@@ -1,0 +1,3 @@
+com\cinefy\service\RatingServiceTest.class
+com\cinefy\controller\ApiIntegrationTest.class
+com\cinefy\service\RecommendationEngineTest.class
