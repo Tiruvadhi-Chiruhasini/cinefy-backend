@@ -8,7 +8,7 @@ RUN mvn -q -B -DskipTests package
 
 FROM eclipse-temurin:17-jre
 WORKDIR /app
-COPY --from=build /app/target/cinefy-backend-1.0.0.jar app.jar
+COPY --from=build /app/target/*.jar app.jar
 ENV JAVA_OPTS="-Xmx384m"
 EXPOSE 8080
 ENTRYPOINT ["sh", "-c", "java $JAVA_OPTS -jar app.jar"]
